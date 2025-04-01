@@ -1,0 +1,18 @@
+<div class="Post">
+    <div>
+      <strong class="NameStyle" id="Namee"><em><%= Name %></em></strong>
+    </div>
+    <br>
+    <div name="Textt" id="Textt"><%= Text %></div>
+    <div class="dropdown">
+      <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Edit
+      </a>
+    
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/Delete/<%= id %>">Delete</a></li>
+        <li><a class="dropdown-item" href="/Update/<%= id %>">Update</a></li>
+    </ul>
+    </div>
+
+  </div>

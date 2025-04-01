@@ -1,0 +1,45 @@
+.Post{
+    border-radius: 10px;
+    box-shadow: 5px 4px 9px rgba(0,0,0,0.3);
+    padding:20px; 
+    position: relative;
+}
+
+.NameStyle{
+    color: #959595;
+}
+
+.followButton{
+    margin-left:20px;
+    position: absolute;
+    right: 15px; 
+    bottom: 10px;
+    padding:5px 10px;
+}
+
+.dropdown{
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+header #small-menu{
+    display: none;
+}
+
+@media (max-width: 576px) {
+    header{
+        position: relative;
+    }
+    
+    header #small-menu{
+        position: absolute;
+        display: inline;
+        right: 0;
+        top: 50%;
+    }
+
+    header .nav{
+        display: none;
+    }
+}
