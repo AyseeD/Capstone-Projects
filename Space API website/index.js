@@ -5,7 +5,6 @@ const app =  express();
 const port = 3000;
 const API_KEY = "AsRPIBeeAng8K1210CFFMlGUGwRsT992cZjPumby";
 const URL = "https://api.nasa.gov/planetary/apod?api_key=";
-const URL2 = "https://api.spacexdata.com/v5/launches/latest";
 
 app.use(express.static("public"));
 
@@ -18,6 +17,10 @@ app.get("/", async (req,res)=>{
     const exp = result.explanation;
     const title = result.title;
     res.render("index.ejs", {url: address2, date: date, explanation: exp, title: title});
+});
+
+app.get("/login", (req,res)=>{
+    res.render("partials/login.ejs");
 });
 
 app.listen(port, ()=>{
