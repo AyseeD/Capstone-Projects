@@ -2,11 +2,26 @@
     text-align: center;
     background-color: black;
     color: aliceblue;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
+    margin-bottom: 90px;
 }
 
 #date{
     text-align: left;
-    margin-left: 110px;
     color: gray;
+}
+
+.Search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.Search form{
+    margin: 40px;
+}
+
+.Search h2, p{
+    margin: 30px 40px 0 40px;
 }
