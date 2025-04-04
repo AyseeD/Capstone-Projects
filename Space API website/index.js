@@ -52,6 +52,10 @@ app.post("/search", async (req,res)=>{
     }
 });
 
+app.get("/insight", (req,res)=>{
+    res.render("partials/insight.ejs");
+})
+
 app.listen(port, ()=>{
     console.log(`Listening to port ${port}`);
 });
