@@ -15,10 +15,18 @@ app.get("/", async (req,res)=>{
         const source = await axios.get(URL + API_KEY);
         const result = source.data;
         const address = result.hdurl;
+        const add2 = result.url;
         const date = result.date;
         const exp = result.explanation;
         const title = result.title;
-        res.render("index.ejs", {url: address, date: date, explanation: exp, title: title});
+
+        if(address){
+            res.render("index.ejs", {url: address, date: date, explanation: exp, title: title});
+        }
+        else{
+            res.render("index.ejs", {url: add2, date: date, explanation: exp, title: title});
+        }
+        
     } catch (error) {
         res.status(404).send(error.message);
     }
@@ -35,18 +43,32 @@ app.post("/search", async (req,res)=>{
         const source = await axios(URL + API_KEY + "&start_date="+ start_date + "&end_date="+ end_date);
         const results = source.data;
         if (Array.isArray(results) && results.length > 0) {
-            const latestResult = results[results.length - 1]; // Get the last entry
+            const latestResult = results[Math.floor(Math.random() * results.length)]; // Get the last entry
             const address = latestResult.hdurl;
+            const add2 = latestResult.url;
             const exp = latestResult.explanation;
             const title = latestResult.title;
 
-            res.render("partials/searched.ejs", {
+
+            if(address)
+            {   
+                res.render("partials/searched.ejs", {
                 urlS: address,
                 explanationS: exp,
                 titleS: title,
                 start: start_date,
                 end: end_date
-            });}
+                });
+            }else{
+                res.render("partials/searched.ejs", {
+                    urlS: add2,
+                    explanationS: exp,
+                    titleS: title,
+                    start: start_date,
+                    end: end_date
+                });
+            }
+        }
     }catch(error){
         res.status(404).send(error.message);
     }
