@@ -1,0 +1,163 @@
+.Rev_Bor{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 12px;
+  margin: 30px 80px;
+  background-color: blanchedalmond;
+}
+
+.Rev_Bor img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+#revPrag{
+  padding: 30px;
+  padding-top: 10px;
+}
+
+.dropdown{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.dropdown-toggle {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: #333;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+#dropMe{
+  background-color: rgb(73, 46, 26);
+}
+
+#dropMe button{
+  color: blanchedalmond;
+}
+
+#dropMe button:active{
+  background-color: rgb(255, 153, 0) !important;
+}
+
+#dropMe button:hover{
+  color: rgb(42, 29, 10);
+}
+
+#modal_dialog{
+  background-color: rgb(229, 184, 122);
+}
+
+.modal-footer button{
+  color:blanchedalmond; 
+  background-color: rgb(42, 34, 22);
+}
+
+.modal-footer button:hover{
+  color:rgb(42, 34, 22); 
+  background-color: blanchedalmond;
+}
+
+#delFormID{
+  background-color: antiquewhite;
+}
+
+#canx{
+  background-color: rgb(149, 128, 104);
+}
+
+body {
+  position: relative;
+  background-image: url("https://media.istockphoto.com/id/1455185175/vector/books-seamless-pattern-vintage-cozy-elements-printed-publications-volumes-of-literature.jpg?s=612x612&w=0&k=20&c=MaQnSsJR3rtrnY5s6hDBv9WDAsqwBEO9BIykQ4o1yVc=");
+  background-repeat: repeat;
+  margin: 0;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black; /* or black, depending on effect */
+  opacity: 0.65; /* adjust transparency */
+  z-index: -1;
+}
+
+.cont2 {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  flex-direction: column;
+}
+
+.newRevForm {
+  width: 100%;
+  max-width: 520px;
+  padding: 20px;
+  background-color: rgba(255, 235, 205, 0.95); /* light background */
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* optional shadow */
+  margin-top: -150px;
+}
+
+.newRevForm label{
+  color: white;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.newRevForm input{
+  background-color: rgb(206, 196, 196);
+}
+
+.newRevForm textarea{
+  background-color: rgb(206, 196, 196);
+}
+
+#newAddBtn{
+  color:burlywood; 
+  background-color: rgb(71, 62, 49);
+}
+
+#newAddBtn:hover{
+  color:blanchedalmond; 
+  background-color: rgb(42, 34, 22);
+}
+
+#addBtn{
+  color: rgb(71, 62, 49); 
+  background-color: burlywood;
+  font-weight: bold;
+}
+
+#addBtn:hover{
+  color: blanchedalmond; 
+  background-color: rgb(42, 34, 22);
+  font-weight: bold;
+}
+
+@media screen and (min-width:600px) {
+  header {
+    justify-content: space-between !important;
+    align-items: center;
+  }
+
+  header .nav {
+    margin-left: auto;
+  }
+}
