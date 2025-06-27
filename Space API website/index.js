@@ -1,11 +1,14 @@
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
+import pg from "pg";
+import env from "dotenv";
 
 const app =  express();
 const port = 3000;
-const API_KEY = "AsRPIBeeAng8K1210CFFMlGUGwRsT992cZjPumby";
-const URL = "https://api.nasa.gov/planetary/apod?api_key=";
+env.config();
+const API_KEY = process.env.API_KEY;
+const URL = process.env.URL;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
