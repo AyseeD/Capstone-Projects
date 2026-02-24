@@ -2,9 +2,13 @@
 This repository includes the capstone projects that were developed as progression indicators for each main module of a web application course for full stack development in udemy.
 
 # Personal Site
+<img width="1903" height="843" alt="Image" src="https://github.com/user-attachments/assets/6c652901-52bb-482b-9cd3-be6a08e71a7d" />
+
 First simple capstone project for basic HTML and CSS usage. It is a personal CV-like website design that can be run using `live server`.
 
 # Blog Web Application
+<img width="822" height="848" alt="Image" src="https://github.com/user-attachments/assets/c4da66b8-5f2e-4e31-ad97-44af88a02c6e" />
+
 This project is a blog web application that uses `Node js`, `Express js`, and `body-parser` _without_ a database connection. The users can create posts and the main page will display it and they can be edited.
 
 ## To run:
@@ -19,6 +23,8 @@ then check the
 url to see it.
 
 # Space API website
+<img width="1895" height="863" alt="Image" src="https://github.com/user-attachments/assets/bf1093aa-14f7-46b6-b82b-3eacab67bedf" />
+
 This project is a website made using  Node js, Express js, Axios, body-parser, and dotenv _without_ a database connection. It is a space themed website that usses the APOD API from NASA to receive Astronomy images to display daily. 
 There is also a search function to enter a date range to get an image for specific dates.
 
@@ -45,6 +51,8 @@ then check the
 url to see it.
 
 # Book Website
+<img width="1900" height="867" alt="Image" src="https://github.com/user-attachments/assets/7f247103-5044-4a2e-83c5-9674f3c2e48c" />
+
 This project uses Node js, Express js, body-parser, dotenv and pg for PostgreSQL connection. This website is a book blog website that uses Open Library's Cover API to display the book's cover. The user can write a review on books they read and enter the ISBN number for the cover.
 
 ## To run:
